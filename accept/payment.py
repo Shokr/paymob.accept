@@ -9,12 +9,21 @@ class AcceptAPI:
         self.url = URLs()
 
     def retrieve_auth_token(self):
+        """
+        Authentication Request:
+        :return: token: Authentication token, which is valid for one hour from the creation time.
+        """
         data = {'api_key': self.api_key}
         r = requests.post(self.url.authentication_url(), json=data)
         token = r.json().get('token')
         return token
 
     def order_registration(self, data):
+        """
+        Order Registration API
+        :param data: Order data
+        :return: registered order
+        """
         r = requests.post(self.url.order_registration_url(), json=data)
         order = r.json()
         return order
