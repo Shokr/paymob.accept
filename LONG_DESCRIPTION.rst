@@ -141,7 +141,8 @@ Using the Accept API
     print(order_10883471_track)
 
     # Preparing Package
-    package = accept.preparing_package(order_id="10883471")  # This will return a pdf file url to be printed.
+    # This will return a pdf file url to be printed.
+    package = accept.preparing_package(order_id="10883471")
     print(package)
 
     # IFrame URL

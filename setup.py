@@ -28,10 +28,8 @@ setup(
     keywords="Paymob Accept api payments",
     packages=find_packages(exclude=["tests", "tests.*"]),
     zip_safe=False,
-    install_requires=[
-        'requests >= 2.20; python_version >= "3.0"',
-    ],
-    python_requires=">=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*",
+    install_requires=['requests', ],
+    python_requires='>=3',
     project_urls={
         "Documentation": "https://docs.paymob.com/",
         "Source Code": "https://github.com/Shokr/paymob.accept",
