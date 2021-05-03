@@ -7,7 +7,7 @@ which makes it compatible with a wide range of versions of the Accept API.
 ## Installation
 
 ```sh
-pip install paymob.accept
+pip install accept
 ```
 
 Install from source with:

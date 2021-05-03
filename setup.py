@@ -16,7 +16,7 @@ with open(os.path.join(here, "accept", "version.py"), encoding="utf-8") as f:
     exec(f.read(), version_contents)
 
 setup(
-    name="paymob.accept",
+    name="accept",
     version=version_contents["VERSION"],
     description="Python client for the Paymob.accept API",
     long_description=long_description,
