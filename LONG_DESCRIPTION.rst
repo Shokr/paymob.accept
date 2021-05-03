@@ -9,7 +9,7 @@ Setup
 
 You can install this package by using the pip tool and installing:
 
-    $ pip install accept
+    $ pip install accept-paymob
     
 
 Setting up a Accept Account
